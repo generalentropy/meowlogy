@@ -33,8 +33,14 @@ function App() {
     const updateFavoris = fav;
     const exist = fav.some((objet) => objet.fact === data);
 
-    !exist &&
-      setFav([...updateFavoris, { id: crypto.randomUUID(), fact: data }]);
+    if (!exist) {
+      const newFav = [
+        ...updateFavoris,
+        { id: crypto.randomUUID(), fact: data },
+      ];
+      setFav(newFav);
+      localStorage.setItem("favorites", JSON.stringify(newFav));
+    }
   };
 
   const handleSetLang = function (e) {
@@ -69,6 +75,10 @@ function App() {
   };
 
   useEffect(() => {
+    const savedFavs = localStorage.getItem("favorites");
+    if (savedFavs) {
+      setFav(JSON.parse(savedFavs));
+    }
     fetchData(lang);
   }, []);
 
@@ -244,11 +254,9 @@ function Panel({ fav, setFav }) {
 
 function Favori({ content, id, setFav, fav }) {
   const handleDelete = function (e) {
-    const updFav = fav;
-
-    const filtered = updFav.filter((el) => el.id !== e.target.dataset.id);
-    console.log(filtered);
-    setFav(filtered);
+    const updFav = fav.filter((el) => el.id !== e.target.dataset.id);
+    setFav(updFav);
+    localStorage.setItem("favorites", JSON.stringify(updFav));
   };
 
   return (
