@@ -17,11 +17,11 @@ To run this project locally:
 
 1. Clone the repository:
    ```
-   git clone [repository URL]
+   git clone https://github.com/generalentropy/meowlogy.git
    ```
 2. Navigate to the project directory:
    ```
-   cd [local repository]
+   cd meowledge
    ```
 3. Install dependencies:
    ```
@@ -37,7 +37,7 @@ To run this project locally:
 - Click 'New fact' to load a random cat fact and picture.
 - Select a language flag to change the language of the facts.
 - Click 'Save' to add a fact and its picture to your favorites.
-- Access your favorite facts and pictures in the side panel.
+- Access your favorite facts in the side panel.
 
 ## Technologies
 

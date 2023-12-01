@@ -84,6 +84,7 @@ body {
   font-weight: 700;
   color: var(--color-text-alternate);
   max-width: 500px;
+  line-height: 24px;
 }
 
 .fav-button {
@@ -140,6 +141,7 @@ body {
   padding: 10px;
   color: var(--color-text-alternate);
   background-color: var(--color-medium);
+  line-height: 16px;
 }
 
 .icon {
