@@ -25,7 +25,7 @@ const favoris = [
 
 function App() {
   const [data, setData] = useState(null);
-  const [img, setImg] = useState("https://cataas.com/cat?type=square");
+  const [img, setImg] = useState("https://i.imgur.com/LO6L7fU.jpg");
   const [lang, setLang] = useState("fra");
   const [fav, setFav] = useState(favoris);
 
