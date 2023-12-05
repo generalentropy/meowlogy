@@ -177,6 +177,7 @@ body {
 }
 
 .header {
+  margin-top: 10px;
   padding: 5px 0;
   display: flex;
   flex-wrap: wrap;
@@ -205,7 +206,7 @@ body {
   height: 100dvh;
   background-color: var(--color-darker);
   transition-timing-function: ease-out;
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
 }
 
 .close-panel {
