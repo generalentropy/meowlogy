@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "meowlogy",
+  "name": "meowlogy - Cat Fact Generator",
   "icons": [
     {
       "src": "favicon.ico",
